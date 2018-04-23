@@ -18,16 +18,16 @@ body { margin: 0; }
 
 /* -------------------------------------------------------- */
 #banner { height: 600px; background: linear-gradient(#f037a5 -60%,#fae62d 140%); position: relative; overflow: hidden; }
-#banner > img { width: 120%; position: absolute; top: -20%; left: -10%; z-index: 1; }
+#banner > img {height: 1510px; position: absolute; top: -20%; left: -10%; z-index: 1; }
 #banner .container-manual { height: 100%; padding-top: 180px; color: white; z-index: 2; }
 #banner h1 { font-size: 48px; font-weight: 900px; letter-spacing: -0.04em; line-height: 1.15; text-align: center; margin-bottom: 35px; }
 #left-sign { width: 24px; height: 24px; position: absolute; left: 29%; bottom: 50px; }
 #right-sign { -webkit-transform: scaleX(-1); transform: scaleX(-1);
     width: 24px; height: 24px; position: absolute; right: 29%; bottom: 50px; }
 .btn-green-manual { background-color: #1db954; color: white; letter-spacing: 2px; border-radius: 500px;
-    padding: 13px 47px; border: 2px solid rgba(50,205,50,.6); font-size: 14px; }
+    padding: 11px 47px; border: 2px solid rgba(50,205,50,.6); font-size: 14px; }
 .btn-transparent-manual { background-color: transparent; color: white; letter-spacing: 2px; border-radius: 500px;
-    padding: 13px 47px; border: 2px solid white; font-size: 14px; }
+    padding: 11px 47px; border: 2px solid white; font-size: 14px; }
 .btn-green-manual:hover { cursor: pointer; background-color: #1ed760; transition-duration: .5s; }
 .btn-transparent-manual:hover { cursor: pointer; background-color: white; color: black; transition-duration: .5s; }
 .btn-group-manual { text-align: center; position: relative; width: 100%; }
@@ -42,23 +42,29 @@ body { margin: 0; }
 #white-1 img { height: 50%; width: 50%; float: left; }
 
 /* -------------------------------------------------------- */
-#color-1 { height: 600px; background: linear-gradient(#fae62d -30%,#f037a5 150%); position: relative; overflow: hidden; }
-#color-1 #burst-easy { width: 40%; position: absolute; left: 15%; top: -15%; z-index: 1; }
-#color-1 .phone-wrapper { background: url(img/outline-phone.svg) no-repeat; width: 315px; height: 630px; color: white; 
-    font-size: 18px; font-weight: 400; line-height: 27px; } /* position: absolute; z-index: 2; left: 485px; top: 80px; */
-#color-1 .phone-wrapper span { position: absolute; left: 100px; top: 100px; }
-#color-1 .phone-wrapper ul { list-style-type: none; position: absolute; left: 20px; top: 260px; }
+#color-1 { height: 550px; background: linear-gradient(#fae62d -30%,#f037a5 150%); position: relative; overflow: hidden; }
+#color-1 #burst-easy { width: 800px; position: absolute; left: 15%; top: -15%; }
+#color-1 .row { margin-top: 80px; }
+#color-1 .phone-wrapper { background: url(img/outline-phone.svg) no-repeat center; width: 315px; height: 630px; color: white; 
+    font-size: 18px; font-weight: 400; line-height: 27px; position: relative; }
+#color-1 .phone-content { width: 315px; height: 630px; margin: 0 auto; padding: 40px; }    
+#color-1 .phone-wrapper p { position: relative; text-align: center; top: 35px; }
+#color-1 .phone-wrapper ul { list-style-type: hiragana; position: relative; left: 20px; top: 90px; padding-left: 6px; }
 #color-1 .phone-wrapper ul li { font-size: 16px; font-weight: 400px; line-height: 24px; margin-bottom: 18px; }
-#color-1 .phone-wrapper .image-wrapper { } /* position: absolute; top: 132px; left: 40px; */
+#color-1 .phone-wrapper .image-wrapper { position: relative; text-align: center; top: 30px; }
 #color-1 .phone-wrapper .image-wrapper img { box-shadow: 0 0 8px rgba(0,0,0,.3); width: 115px; height: 115px; }
-#color-1 .text-wrapper { color: white; position: absolute; top: 50px; right: 25%; width: 450px; z-index: 3; }
+#color-1 .text-wrapper { color: white; width: 450px; }
+#color-1 h1 { font-size: 32px; font-weight: 900; line-height: 1.2; margin: 30px 0;}
+#color-1 h2 { font-size: 20px; font-weight: 900; line-height: 1.4; }
 
 /* -------------------------------------------------------- */
 #white-2 { height: 510px; background-color: white; position: relative; }
-#white-2 .text-wrapper { position: absolute; top: 50px; left: 20%; width: 555px; padding: 30px; }
-#white-2 .text-wrapper > ul > li { display: inline; margin-right: 45px; margin-left: -35px; }
-#white-2 .image-wrapper { position: absolute; top: 30%; right: 20%; width: 555px; margin-top: top; margin-bottom: bottom; }
-#white-2 img { width: 555px; }
+#white-2 .text-wrapper { text-align: center; }
+#white-2 .text-wrapper > ul > li { display: inline; margin-right: 43px; margin-left: -35px; font-weight: 700; }
+#white-2 .image-wrapper { margin: auto; }
+#white-2 img { width: 100%; }
+#white-2 h1 { font-size: 32px; font-weight: 900; line-height: 1.2; margin: 30px 0; }
+#white-2 h2 { font-size: 20px; font-weight: 900; line-height: 1.4; margin: 30px 0; }
 
 /* -------------------------------------------------------- */
 #color-2 { height: 750px; background: linear-gradient(#fae62d -30%,#f037a5 150%); position: relative; overflow: hidden; }
@@ -81,7 +87,7 @@ body { margin: 0; }
 #footer { height: 500px; background-color: black; position: relative; color: white; }
 #footer > .spotify-logo { position: absolute; top: 15%; left: 20%; }
 #footer-nav { position: absolute; top: 18%; left: 30%; }
-#footer-nav .col { position: relative; float: left; margin-right: 100px; }
+#footer-nav .col-manual { position: relative; float: left; margin-right: 100px; }
 #footer-nav span { font-weight: 900; font-size: 12px; line-height: 17px; color: #919496; letter-spacing: .08em; }
 #footer-nav ul { list-style-type: none; }
 #footer-nav li { margin-left: -40px; margin-bottom: 20px; font-weight: 400px; font-size: 16px; line-height: 24px; }
@@ -101,15 +107,18 @@ body { margin: 0; }
     #banner { height: 660px; }
     #banner .container-manual { padding-top: 285px; }
     #banner h1  { font-size: 64px; font-weight: 900px; letter-spacing: -0.04em; line-height: 1.15; }
-    #banner > img { top: -50%; }
+    #banner > img { height: 1000px; top: -24%; left: 10px; }
     #left-sign { width: 35px; height: 35px; left: 10px; top: 310px; }
     #right-sign { width: 35px; height: 35px; right: 10px; top: 310px; }
     .btn-group-manual > button { margin: 0 7px; }
     #white-1 .container { height: 100%; padding: 60px 0;}
-    #white-1 .text-wrapper { width: 555px; padding-right: 120px; margin: auto 0; }
+    #white-1 .text-wrapper { width: 555px; padding-right: 100px; margin: auto 0; }
     #white-1 .image-wrapper { width: 555px; box-shadow: 0 0 8px rgba(0,0,0,.3); padding: 0;}
     #white-1 img { width: 100%; height: auto; float: left; }
-    #white-1 h1 { font-size: 42px; font-weight: 900; line-height: 58px; margin: 30px 0;}
+    #white-1 h1 { font-size: 40px; font-weight: 900; line-height: 58px; margin-top: 30px;}
+    #color-1 { height: 600px; }
+    #color-1 h1 { font-size: 40px; font-weight: 900; line-height: 58px; margin-bottom: 30px;}
+    #white-2 h1 { font-size: 40px; font-weight: 900; line-height: 58px; margin-top: 30px;}
 }
 
 @media only screen and (min-width: 992px) {
@@ -126,11 +135,15 @@ body { margin: 0; }
     #navbar a:hover { color: #1ed760; }
     #banner .container-manual { padding-top: 270px; }
     #banner h1 { font-size: 80px; font-weight: 900px; letter-spacing: -0.04em; line-height: 1.15; }
-    #banner > img { height: 1510px; width: 100%; position: absolute; top: -75%; left: 0; z-index: 1; }
+    #banner > img { height: 1100px; top: -35%; left: 80px; }
     #white-1 img { height: 50%; width: 50%; float: left; }
+    #white-2 .container { height: 100%; }
+    #white-2 .row { height: 100%; margin: auto; }
+    #white-2 .text-wrapper { text-align: left; margin: auto; padding: 0; }
+
 }
 @media only screen and (min-width: 1200px)  { 
     .container-manual { width: 1170px; } 
-    #banner > img { height: 1510px; width: 120%; position: absolute; top: -85%; left: -5%; z-index: 1; }
+    #banner > img { height: 1510px; top: -85%; left: 14%; }
 }
 
